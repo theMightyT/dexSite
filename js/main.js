@@ -1,7 +1,7 @@
 (function(){
 	console.log('fired!');
 	
-	var textOptions = ["an image", "a video", "an email", "a decision", "a behaviour", "a conversation", "multichannel", "smart content", "DIGITAL ENGAGEMENT"];
+	var textOptions = ["an image", "a video", "an email", "a decision", "a behaviour", "a conversation", "multichannel", "smart content", "ENGAGEMENT"];
 	var heroText = document.querySelector('.animStrong'),
 		tlAnim = new TimelineLite(),
 		counter = 0,
@@ -35,6 +35,8 @@
 			timer = setInterval(animateText, 2500); }, 6000 );
 	}
 
-	animateText();
-	timer = setInterval(animateText, 2500);
+	$(document).ready(function() {
+		animateText();
+		timer = setInterval(animateText, 2500);
+	});	
 })();
